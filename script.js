@@ -74,7 +74,7 @@ class Player {
     this.jetsFrameX = 0;
     this.smallLaser = new SmallLaser(this.game);
     this.bigLaser = new BigLaser(this.game);
-    this.energy = 50;
+    this.energy = 80;
     this.maxEnergy = 100;
     this.cooldown = false;
   }
@@ -531,4 +531,5 @@ window.addEventListener("load", function () {
   }
   animate(0);
 });
+
 
