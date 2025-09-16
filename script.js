@@ -35,7 +35,7 @@ class SmallLaser extends Laser {
   constructor(game) {
     super(game);
     this.width = 5;
-    this.damage = 0.3;
+    this.damage = 1.3;
   }
   render(context) {
     if (this.game.player.energy > 1 && !this.game.player.cooldown) {
@@ -48,7 +48,7 @@ class BigLaser extends Laser {
   constructor(game) {
     super(game);
     this.width = 15;
-    this.damage = 0.7;
+    this.damage = 1.7;
   }
   render(context) {
     if (this.game.player.energy > 1 && !this.game.player.cooldown) {
@@ -531,3 +531,4 @@ window.addEventListener("load", function () {
   }
   animate(0);
 });
+
